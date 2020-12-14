@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./style.css"/>
+		<script src="main.js"></script>
+		<link rel="stylesheet" href="./material/material.min.css">
+		<script src="./material/material.min.js"></script>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+		<link rel="icon" type="image/png" href="./img/folder.png"/>
+		<title>File Manager - Alexenferman</title>
+	</head>
+	<body>
+	
+<div style="background-color: #e6b800; width: 100%; color: white;">
+
+<div class="filepathcontent">
+<button onclick="up()" id="arrowup" class="mdl-button mdl-js-button mdl-button--icon"><i style="font-size: 25px;" class="material-icons">arrow_backward</i></button><div class="mdl-tooltip" data-mdl-for="arrowup">Go Back</div>
+<img width="30px" style=" display: inline-block; padding-left: 20px; vertical-align: middle" src="./img/folder_white.png" />
+<h6 style="display: inline-block; font-size: 16px;">files.alexenferman.com</h6><h6 id="path" style="display: inline-block; font-size: 16px;">/</h6>
+<h6 style="float:right; width: 100px; font-size: 12px; line-height: 15px">Powered by jsfi by Alexenferman</h6>
+<div style="padding-top: 20px; float:right; color: white"><button style=" float:right; color: white" class="mdl-button mdl-js-button">Home</button></div>
+
+</div>
+</div>
+
+<div class="content">
+<!--div id="back" onclick="up()"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/files_up.png" class="folderimg"/><h6 style="display: inline-block;">UP</h6></div></div></div-->
+
+<div class="folder" id="/">
+<div id="/Moto-E-2020-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg" /><h6 style="display: inline-block;">Moto E 2020</h6> </div></div></div>
+<div id="/My-Gica-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg" /><h6 style="display: inline-block;">My Gica</h6> </div></div></div>
+<div id="/Programs-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg" /><h6 style="display: inline-block;">Programs</h6> </div></div></div>
+<div id="/Samsung-Galaxy-J1-2016-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg" /><h6 style="display: inline-block;">Samsung Galaxy J1 2016</h6> </div></div></div>
+<div id="/Surface-RT-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg" /><h6 style="display: inline-block;">Surface RT</h6> </div></div></div>
+<div id="/ZTE-Avid-Plus-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg" /><h6 style="display: inline-block;">ZTE Avid Plus</h6> </div></div></div>
+</div>
+
+<div class="folder" id="/data">
+<div id="/data/obb-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Obb</h6> </div></div></div>
+<div id="/data/android-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Android</h6> </div></div></div>
+</div>
+
+<div class="folder" id="/Programs">
+<div id="/Programs/AEM-Store-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">AEM Store</h6> </div></div></div>
+</div>
+
+<div class="folder" id="/Programs/AEM-Store">
+
+<div class="buildsfor" style="padding-top: 20px">
+<img style="padding: 10px" width="70" src="./img/box.png"/>
+<div style="display: inline-block; line-height: 0; vertical-align: text-top;">
+<h6 style="margin: 2px; line-height: 0px; display: inline-block; font-size: 25px;">AEM Store </h6></div></div>
+
+<div class="filedlcontainer"><img src="./img/folder.png" style="border-radius: 50%; width:30px; "/><h6 style="display: inline-block; padding-left: 20px;">Release</h6>
+
+<a href="https://github.com/alexenferman/AEM-Store" target="_blank">
+<button id="devicet1" class="mdl-button mdl-js-button mdl-button--icon">
+  <i style="color: #8c8c8c" class="material-icons">account_tree</i>
+</button>
+<div class="mdl-tooltip" data-mdl-for="devicet1">Source Code</div>
+</a>
+<a href="./aemstore/AEM_Store_3.0.zip" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/zip-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;"><b>[Latest]</b> AEM_Store_3.0.zip</h6></div></div></div></a>
+<a href="./aemstore/ARM_Store_2.0.zip" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/zip-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;"> AEM_Store_2.0.zip</h6></div></div></div></a>
+<a href="./aemstore/ARM_Store.zip" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/zip-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;"> AEM_Store.zip</h6></div></div></div></a>
+</div>
+</div>
+
+<div class="folder" id="/My-Gica">
+<!-- /My Gica/ -->
+<div id="/My-Gica/Root-Patch-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Root Patch</h6> </div></div></div>
+</div>
+<div class="folder" id="/My-Gica/Root-Patch">
+<!-- /My Gica/ -->
+<a href="./files/mygicatvroot/MyGicaTVRootpatch.img"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/img-file.png" class="folderimg"/><h6 style="display: inline-block;">MyGicaTVRootpatch.img</h6> </div></div></div></a>
+</div>
+
+<div class="folder" id="/Samsung-Galaxy-J1-2016">
+<!-- /Samsung Galaxy J1 2016/ -->
+<div id="/Samsung-Galaxy-J1-2016/Custom-ROM-Builds-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Custom ROM Builds</h6> </div></div></div>
+</div>
+
+<div class="folder" id="/Samsung-Galaxy-J1-2016/Custom-ROM-Builds">
+<div class="buildsfor" style="padding-top: 20px">
+<img style="padding: 10px" width="70" src="./img/j1xlte.jpg"/>
+<div style="display: inline-block; line-height: 0; vertical-align: text-top;">
+<h6 style="margin: 2px; line-height: 0px; display: inline-block; font-size: 25px;">Builds For j1xlte </h6>
+<div>
+<h6 style="margin: 2px; font-size: 14px; color: #c4c4c4; display: inline-block; padding-top: 20px">Installation guide - Device Info - Changelog</h6>
+</div>
+</div>
+</div>
+
+<div class="filedlcontainer"><img src="./img/lineage-logo.png" style="border-radius: 50%; width:30px; "/><h6 style="display: inline-block; padding-left: 20px;">Lineage OS</h6>
+<a href="http://source.alexenferman.com/Samsung%20Galaxy%20J1%202016/Device%20Tree/" target="_blank">
+<button id="devicet1" class="mdl-button mdl-js-button mdl-button--icon">
+  <i style="color: #8c8c8c" class="material-icons">account_tree</i>
+</button>
+<div class="mdl-tooltip" data-mdl-for="devicet1">Device Tree</div>
+</a>
+
+<a href="https://github.com/ciyanogen/android_kernel_samsung_j1xlte" target="_blank">
+<button id="kernelt1" class="mdl-button mdl-js-button mdl-button--icon">
+  <i style="color: #8c8c8c" class="material-icons">settings</i>
+</button>
+<div class="mdl-tooltip" data-mdl-for="kernelt1">Kernel Tree</div>
+</a>
+
+
+
+<a href="https://drive.google.com/file/d/1eJrhulIDOCCdbkhyDhe68zHWGGNN4hN1/view?usp=sharing" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/zip-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;"><b>[Latest]</b> lineage-14.1-20201101-j1xlte.zip</h6></div></div></div></a></div>
+
+<div class="filedlcontainer"><img src="./img/lineage-logo.png" style="border-radius: 50%; width:30px; "/><h6 style="display: inline-block; padding-left: 20px;">Lineage Recovery</h6>
+<a href="https://drive.google.com/file/d/1MJarKKEh6kB1Eti_wDTvJcfEduixIqNB/view?usp=sharing" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/img-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;"><b>[Latest]</b> Lineage_Recovery-UNOFFICIAL-j1xlte.img</h6></div></div></div></a></div>
+</div>
+
+<div class="folder" id="/ZTE-Avid-Plus">
+<!-- /ZTE Avid Plus/ -->
+<div id="/ZTE-Avid-Plus/Custom-ROM-Builds-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Custom ROM Builds</h6> </div></div></div>
+<div id="/ZTE-Avid-Plus/Stock-ROM-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Stock ROM</h6> </div></div></div>
+</div>
+<div class="folder" id="/ZTE-Avid-Plus/Stock-ROM">
+<!-- /ZTE Avid Plus/Stock ROM -->
+<a href="https://combinefile.com/index.php?a=downloads&b=file&id=24024"><div class="filepadding"><div class="filemgrdlcard" onclick="ZTEAvidPlusROMRecoveryBuildsLineageOS()"><div class="filedlcontainer"><img src="./img/zip-file.png" class="folderimg"/><h6 style="display: inline-block;">319210B0964Z828WV1.0.0B03.zip</h6> </div></div></div></a>
+<a href="./files/ZTEZ828/CanadaRogersZ828UpgradeGuide(Through an SD Card).pdf" download="CanadaRogersZ828UpgradeGuide(Through an SD Card).pdf"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/pdf-file.png" class="folderimg"/><h6 style="display: inline-block;">Canada Rogers Z828 Upgrade Guide(Through an SD Card).pdf</h6> </div></div></div></a>
+<a href="https://oss.ztedevices.com/prod/en/direct/canada/z828/Z828%20SD%20card%20software%20package(328360B1186Z828RV1.0.0B03).zip"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/zip-file.png" class="folderimg"/><h6 style="display: inline-block;">Z828 SD card software package(32836...RV1.0.0B03).zip</h6> </div></div></div></a>
+</div>
+<div class="folder" id="/ZTE-Avid-Plus/Custom-ROM-Builds">
+<div class="buildsfor" style="padding-top: 20px">
+<img style="padding: 10px" width="70" src="./img/ztez828.png"/>
+<div style="display: inline-block; line-height: 0; vertical-align: text-top;">
+<h6 style="margin: 2px; line-height: 0px; display: inline-block; font-size: 25px;">Builds For Achill </h6>
+<div>
+<h6 style="margin: 2px; font-size: 14px; color: #c4c4c4; display: inline-block; padding-top: 20px">Installation guide - Device Info - Changelog</h6>
+</div>
+</div>
+</div>
+
+<div class="filedlcontainer"><img src="./img/lineage-logo.png" style="border-radius: 50%; width:30px; "/><h6 style="display: inline-block; padding-left: 20px;">Lineage OS</h6>
+
+<a href="http://source.alexenferman.com/ZTE%20Avid%20Plus/Device%20Tree/" target="_blank">
+<button id="devicet1" class="mdl-button mdl-js-button mdl-button--icon">
+  <i style="color: #8c8c8c" class="material-icons">account_tree</i>
+</button>
+<div class="mdl-tooltip" data-mdl-for="devicet1">Device Tree</div>
+</a>
+
+<a href="https://github.com/alexenferman/Android_Kernel_Zte_Achill" target="_blank">
+<button id="kernelt1" class="mdl-button mdl-js-button mdl-button--icon">
+  <i style="color: #8c8c8c" class="material-icons">settings</i>
+</button>
+<div class="mdl-tooltip" data-mdl-for="kernelt1">Kernel Tree</div>
+</a>
+
+<a href="https://drive.google.com/file/d/1skaVl8qlTsPpudrjWTcdBa-YTD2SB2iI/view" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/zip-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;"><b>[Latest]</b> lineage-14.1-20200408-achill.zip</h6></div></div></div></a></div>
+
+<div class="filedlcontainer"><img src="./img/lineage-logo.png" style="border-radius: 50%; width:30px; "/><h6 style="display: inline-block; padding-left: 20px;">Lineage Recovery</h6>
+<a href="https://drive.google.com/file/d/1VMdSdVv39yOC6kYUX3czgZwJh-RYnS4A/view" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/img-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;"><b>[Latest]</b> Lineage_Recovery-UNOFFICIAL-achill.img</h6></div></div></div></a></div>
+
+
+<div class="filedlcontainer"><img src="./img/twrp-logo.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;">TWRP Recovery</h6>
+<a href="https://drive.google.com/file/d/1T85lkAphPtIUfyUch5vW5bK5Y1IfDzGP/view" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/img-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;"><b>[Latest]</b> TWRP-20200527-UNOFFICIAL-achill.img</h6></div></div></div></a>
+<a href="https://drive.google.com/file/d/1j9H5wQGoJIQZqEzV7v_3kvd_L_z4Wyc6/view" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/img-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/> <h6 style="display: inline-block;">TWRP-20200408-UNOFFICIAL-achill.img</h6></div></div></div></a></div>
+
+<div class="filedlcontainer"><img src="./img/folder.png" style="border-radius: 50%; width:30px; "/><h6 style="display: inline-block; padding-left: 20px;">Misc</h6>
+<a href="https://drive.google.com/file/d/1G7CabXBjCM5VNUB2pIrFhV5Ba6Xws5Rp/view" target="_blank"><div class="articlehorcardpadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/zip-file.png" style="width:30px; padding: 0px 20px 0px 0px; display: inline-block;"/><h6 style="display: inline-block;">System-dump.zip</h6></div></div></div></a>
+</div>
+
+</div>
+
+<div class="folder" id="/Moto-E-2020">
+<!-- /Moto E 2020/ -->
+<div id="/Moto-E-2020/Custom-ROM-Builds-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Custom ROM Builds</h6> </div></div></div>
+<div id="/Moto-E-2020/Stock-ROM-" onclick="Navigate(this.id)" class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Stock ROM</h6> </div></div></div>
+</div>
+
+<div class="folder" id="/Moto-E-2020/Custom-ROM-Builds">
+<!-- /Moto E 2020/Custom ROM Builds -->
+
+<div class="buildsfor" style="padding-top: 20px">
+<img style="padding: 10px" width="70" src="./img/motoe2020.png"/>
+<div style="display: inline-block; line-height: 0; vertical-align: text-top;">
+<h6 style="margin: 2px; line-height: 0px; display: inline-block; font-size: 25px;">Builds For Ginna </h6>
+<div>
+<h6 style="margin: 2px; font-size: 14px; color: #c4c4c4; display: inline-block; padding-top: 20px">Installation guide - Device Info - Changelog </h6>
+</div>
+</div>
+</div>
+<div class="filedlcontainer">
+<img src="./img/twrp-logo.png" class="folderimg"/>
+<h6 style="display: inline-block;">TWRP Recovery</h6>
+
+<a href="https://github.com/Hasaber8/twrp_device_motorola_ginna/tree/ten-electi" target="_blank">
+<button id="devicet1" class="mdl-button mdl-js-button mdl-button--icon">
+  <i style="color: #8c8c8c" class="material-icons">account_tree</i>
+</button>
+<div class="mdl-tooltip" data-mdl-for="devicet1">Device Tree</div>
+</a>
+
+<a href="https://github.com/MotorolaMobilityLLC/kernel-msm/archive/MMI-QPG30.82-95.zip" target="_blank">
+<button id="kernelt1" class="mdl-button mdl-js-button mdl-button--icon">
+  <i style="color: #8c8c8c" class="material-icons">settings</i>
+</button>
+<div class="mdl-tooltip" data-mdl-for="kernelt1">Kernel Tree</div>
+</a>
+
+<a href="https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni/tree/twrp-10.0" target="_blank">
+<button id="twrp1" class="mdl-button mdl-js-button mdl-button--icon">
+  <i style="color: #8c8c8c" class="material-icons">build</i>
+</button>
+<div class="mdl-tooltip" data-mdl-for="twrp1">TWRP Build Source</div>
+</a>
+
+
+<div class="filepadding">
+<div class="alertcard" style="background-color: #ffc90e; color: black">
+  <div class="alertcontainer">
+    <h6>TWRP for Ginna is in early Alpha stage. These images are used for debugging purposes only.</h6> 
+  </div>
+</div>
+</div>
+<a href="https://drive.google.com/file/d/1BB3RReQcgufd2PJAwmTfprGYef0H90_k/view?usp=sharing" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/img-file.png" class="folderimg"/><h6 style="display: inline-block;"><b>[Latest]</b> TWRP-3.4.0-0-ginna-2020-12-08.img</h6></div></div></div></a>
+<a href="https://drive.google.com/file/d/1A_SunZ1dQO3_9CdSqt5Fg6JEurz32pO3/view?usp=sharing" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/img-file.png" class="folderimg"/><h6 style="display: inline-block;">TWRP-3.4.0-0-ginna-2020-12-05.img</h6></div></div></div></a>
+</div>
+</div>
+
+<div class="folder" id="/Moto-E-2020/Stock-ROM">
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/Boost/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Boost Mobile</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/CC/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Consumer Cellular</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/Comcast/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Comcast ðŸ˜‚</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/MetroPCS/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">MetroPCS</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/AMXLA/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Mexico / Latin America</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/RETCA/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Retail Canada</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/RETUS/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Retail United States</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/TMO/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">T-Mobile</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/Tracfone/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Tracfone</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/USC/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">US Cellular</h6> </div></div></div></a>
+<a href="https://mirrors.lolinet.com/firmware/moto/ginna/official/VZW/" target="_blank"><div class="filepadding"><div class="filemgrdlcard"><div class="filedlcontainer"><img src="./img/folder.png" class="folderimg"/><h6 style="display: inline-block;">Verizon</h6> </div></div></div></a>
+
+</div>
+
+<div class="folder" id="/Surface-RT">
+<!-- /Surface RT/ -->
+<h6>No Files </h6>
+</div>
+
+
+</div>
+<script>
+	    var queryString = window.location.search;
+		console.log(queryString);
+
+
+		
+if (queryString) {
+    queryString = queryString.slice(1);
+	console.log(queryString);
+	del = document.getElementsByClassName("folder");
+	for(var i = 0; i < del.length; i++)
+    {del[i].style.display="none";}
+	document.getElementById("path").innerHTML = queryString;
+	document.getElementById(queryString).style.display = "block"
+}
+		
+function Navigate(clicked_id) {
+var currentfolder = clicked_id.slice(0, -1);
+console.log(currentfolder);
+del = document.getElementsByClassName("folder");
+	for(var i = 0; i < del.length; i++)
+    {del[i].style.display="none";}
+document.getElementById(currentfolder).style.display = "block"
+document.getElementById("path").innerHTML = currentfolder;
+window.location.search = currentfolder
+}
+
+function up() {
+del = document.getElementsByClassName("folder");
+	for(var i = 0; i < del.length; i++)
+    {del[i].style.display="none";}
+currentfolder = document.getElementById("path").innerHTML;
+currentfolder = currentfolder.substr(0, currentfolder.lastIndexOf("/"));
+if (currentfolder === "") {
+	var currentfolder = "/"
+}
+document.getElementById("path").innerHTML = currentfolder;
+document.getElementById(currentfolder).style.display = "block"
+
+console.log(currentfolder)
+window.location.search = currentfolder
+
+}
+
+</script>
+	</body>
+</html>
